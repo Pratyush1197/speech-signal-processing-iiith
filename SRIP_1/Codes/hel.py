@@ -32,3 +32,13 @@ def interpret_wav(raw_bytes, n_frames, n_channels, sample_width, interleaved = T
 
     return channels
 
+with contextlib.closing(wave.open(fname,'rb')) as spf:
+    sampleRate = spf.getframerate()
+    ampWidth = spf.getsampwidth()
+    nChannels = spf.getnchannels()
+    nFrames = spf.getnframes()
+
+    # Extract Raw Audio from multi-channel Wav File
+    signal = spf.readframes(nFrames*nChannels)
+    spf.close()
+    channels = interpret_wav(signal, nFrames, nChannels, ampWidth, True)
