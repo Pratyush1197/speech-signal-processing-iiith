@@ -42,3 +42,14 @@ with contextlib.closing(wave.open(fname,'rb')) as spf:
     signal = spf.readframes(nFrames*nChannels)
     spf.close()
     channels = interpret_wav(signal, nFrames, nChannels, ampWidth, True)
+    freqRatio = (cutOffFrequency/sampleRate)
+    N = int(math.sqrt(0.196196 + freqRatio**2)/freqRatio)
+
+    # Use moviung average (only on first channel)
+    filtered = running_mean(channels[0], N).astype(channels.dtype)
+
+    wav_file = wave.open(outname, "w")
+    wav_file.setparams((1, ampWidth, sampleRate, nFrames, spf.getcomptype(), spf.getcompname()))
+    wav_file.writeframes(filtered.tobytes('C'))
+    wav_file.close()
+    
