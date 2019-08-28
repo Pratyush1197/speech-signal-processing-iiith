@@ -5,6 +5,6 @@ and the graph can be plotted on the screen using matplotlib library of python.
 1. First clone the repository
 2. run `npm install` inside the folder 
 3. run `pip install -r requirements.txt` 
-4. run `npm start`
+4. run `npm run start`
 
 Your application will start on your local machine
