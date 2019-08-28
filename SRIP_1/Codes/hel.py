@@ -22,3 +22,13 @@ def interpret_wav(raw_bytes, n_frames, n_channels, sample_width, interleaved = T
         raise ValueError("Only supports 8 and 16 bit audio formats.")
 
     channels = np.fromstring(raw_bytes, dtype=dtype)
+     if interleaved:
+        # channels are interleaved, i.e. sample N of channel M follows sample N of channel M-1 in raw data
+        channels.shape = (n_frames, n_channels)
+        channels = channels.T
+    else:
+        # channels are not interleaved. All samples from channel M occur before all samples from channel M-1
+        channels.shape = (n_channels, n_frames)
+
+    return channels
+
