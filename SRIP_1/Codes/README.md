@@ -113,7 +113,7 @@ This document captures the test cases of the experiment.
 | Test Case Id | Test Scenario                                                    | Test Case                                     | Test Data                     | Expected Output                      | Actual Output                  | Test Result | Comments |
 |--------------|------------------------------------------------------------------|-----------------------------------------------|-------------------------------|--------------------------------------|--------------------------------|-------------|----------|
 | 1.           | To listen to a specific voice sample in specific language, Choose language name in Dropdown and Click on the play button. Frequency of audio sample can be also adjusted by selecting a certain frequency from dropdown | Click on the Play button under the voice sample or its subpart |  The audio is played with selected frequency|  |  The audio is played On button click audio with waveform is played  | |  The audio is played On button click audio with waveform is played  | Pass |       | None     |
-| 2.           |To Translate any sentence from English to specific language and vice-versa Give input in the text-box in the specific language page | We get the translated text on button click | Data can be text value only| Translated Text is shown | Translated Text is shown  | Pass        | None     |
+| 2.           | change the bits/sample of any audio wave and the resultant waveform can be displayed on the graph. | We get the waveform generated on button click | Data can be text value only| Aliasing effect can also be added. | Audio wave is shown  | Pass        | None     |
 
 ****
 
@@ -216,14 +216,3 @@ Repeat the entire exercise with phoneme as the subword unit.
 
 
 
-
-This is an electron Desktop app for processing the audio wave. With this application we can change the sampling frequency of any audio wave, listen the changes
-and the graph can be plotted on the screen using matplotlib library of python. 
-
-**Installation**
-1. First clone the repository
-2. run `npm install` inside the folder 
-3. run `pip install -r requirements.txt` 
-4. run `npm run start`
-
-Your application will start on your local machine
