@@ -1,0 +1,248 @@
+{
+    "artciles": [
+        {
+            "quiztitle":"Quiz for Manual speech signal-to-symbol transformation",
+            "containers":"5"
+        },
+        {
+            "q": "In the frequency sampling method for FIR filter design, we specify the desired frequency response Hd(ω) at a set of equally spaced frequencies.?",
+            "option": [
+                "True",
+                "False"
+                
+            ],
+            "answer": "Option 1",
+            "description": "In the frequency sampling method, we specify the frequency response Hd(ω) at a set of equally spaced frequencies, namely"
+        },
+        {
+            "q": "To reduce side lobes, in which region of the filter the frequency specifications has to be optimized?"[
+                "Stop band",
+                "Pass band",
+                "Transition band"
+            ],
+            "answer": "Option 3",
+            "description": "To reduce the side lobes, it is desirable to optimize the frequency specification in the transition band of the filter. This optimization can be accomplished numerically on a digital computer by means of linear programming techniques"
+        },
+        {
+            "q": " What is the frequency response of a system with input h(n) and window length of M?",
+            "option": [
+                "AND",
+                "NAND",
+                "NOR"
+            ],
+            "answer": "Option 2",
+            "description": "NAND is !(X.Y)"
+        },
+        {
+            "q": "Which of the following is equal to the value of H(k+α)?",
+            "option": [
+                " H*(M-k+α)",
+                "H*(M+k+α)",
+                " H*(M-k-α)"
+            ],
+            "answer": "Option 3",
+            "description": "Since {h(n)} is real, we can easily show that the frequency samples {H(k+α)} satisfy the symmetry condition"
+        },
+        {
+            "q": "The linear equations for determining {h(n)} from {H(k+α)} are not simplified.",
+            "option": [
+                "True",
+                "False"
+                
+            ],
+            "answer": "Option 1",
+            "description": "The major advantage of designing linear phase FIR filter using frequency sampling method lies in the efficient frequency sampling structure."
+        },
+        {
+            "q": "Which of the following is introduced in the frequency sampling realization of the FIR filter?",
+            "option": [
+                "Poles are more in number on unit circle",
+                "Zeros are more in number on the unit circle",
+                "None of the mentioned"
+            ],
+            "answer": "Option 3",
+            "description": "There is a potential problem for frequency sampling realization of the FIR linear phase filter. The frequency sampling realization of the FIR filter introduces poles and zeros at equally spaced points on the unit circle."
+        },
+        {
+            "q": "The Fourier series for the signal x(n)=cos√2πn exists.",
+            "option": [
+                "True",
+                "False"
+             
+            ],
+            "answer": "Option 2",
+            "description": "For ω0=√2π, we have f0=1/√2. Since f0 is not a rational number, the signal is not periodic. Consequently, this signal cannot be expanded in a Fourier series."
+        },
+        {
+            "q": "Why is it desirable to optimize frequency response in the transition band of the filter?",
+            "option": [
+                "Increase side lobe",
+                "Reduce side lobe",
+                "Increase main lobe"
+            ],
+            "answer": "Option b",
+            "description": "To reduce side lobes, it is desirable to optimize the frequency specification in the transition band of the filter."
+        },
+        {
+            "q": "What are the Fourier series coefficients for the signal x(n)=cosπn/3?",
+            "option": [
+                "c1=c2=c3=c4=0,c1=c5=1/2",
+                "c0=c1=c2=c3=c4=c5=0",
+                "c0=c1=c2=c3=c4=c5=1/2"
+            ],
+            "answer": "Option 1",
+            "description": "Basic"
+        },
+        {
+            "q": " What is the period of the Fourier transform X(ω) of the signal x(n)?",
+            "option": [
+                "pi",
+                "1",
+                "2pi"
+            ],
+            "answer": "Option 3",
+            "description": "Based on Concept"
+        },
+        {
+            "q": "What is the value of discrete time signal x(n) at n=0 whose Fourier transform is represented as below?",
+            "option": [
+                "ωc.π",
+                "-ωc.π",
+                "ωc/π"
+            ],
+            "answer": "Option 3",
+            "description": "Basic"
+        },
+        {
+            "q": " Which of the following represents the phase associated with the frequency component of discrete-time Fourier series(DTFS)?",
+            "option": [
+                "ej2πkn/N",
+                "e-j2πkn/N",
+                "ej2πknN"
+            ],
+            "answer": "Option 1",
+            "description": "Basic"
+        },
+        {
+            "q": "The oscillatory behavior of the approximation of XN(ω) to the function X(ω) at a point of discontinuity of X(ω) is known as Gibbs phenomenon.",
+            "option": [
+                "True",
+                "False"
+                
+            ],
+            "answer": "Option 1",
+            "description": "We note that there is a significant oscillatory overshoot at ω=ωc, independent of the value of N. As N increases, the oscillations become more rapid, but the size of the ripple remains the same. One can show that as N→∞, the oscillations converge to the point of the discontinuity at ω=ωc. The oscillatory behavior of the approximation of XN(ω) to the function X(ω) at a point of discontinuity of X(ω) is known as Gibbs phenomenon."
+        },
+        {
+            "q": " If a power signal has its power density spectrum concentrated about zero frequency, the signal is known as:",
+            "option": [
+                "Low frequency signal",
+                "Middle frequency signal",
+                "High frequency signal"
+            ],
+            "answer": "Option 1",
+            "description": "We know that, for a low frequency signal, the power signal has its power density spectrum concentrated about zero frequency."
+        },
+        {
+            "q": "What are the main characteristics of Anti aliasing filter?",
+            "option": [
+                "Ensures that bandwidth of signal to be sampled is limited to frequency range",
+                " To limit the additive noise spectrum and other interference, which corrupts the signal"
+              
+            ],
+            "answer": "Option 1",
+            "description": "Explanation: T he anti aliasing filter is an analog filter which has a twofold purpose. First, it ensures that the bandwidth of the signal to be sampled is limited to the desired frequency range. Using an anti aliasing filter is to limit the additive noise spectrum and other interference, which often corrupts the desired signal. Usually, additive noise is wide band and exceeds the bandwidth of the desired signal."
+        },
+        {
+            "q": " In general, a digital system designer has better control of tolerances in a digital signal processing system than an analog system designer who is designing an equivalent analog system.",
+            "option": [
+                "True",
+                "False"
+               
+            ],
+            "answer": "Option 1",
+            "description": "Analog signal processing operations cannot be done very precisely either, since electronic components in analog systems have tolerances and they introduce noise during their operation. In general, a digital system designer has better control of tolerances in a digital signal processing system than an analog system designer who is designing an equivalent analog system."
+        },
+        {
+            "q": "The term ‘bandwidth’ represents the quantitative measure of a signal.",
+            "option": [
+                "True",
+                "False"
+                
+            ],
+            "answer": "Option 1",
+            "description": " In addition to the relatively broad frequency domain classification of signals, it is often desirable to express quantitatively the range of frequencies over which the power or energy density spectrum is concentrated. This quantitative measure is called the ‘bandwidth’ of a signal."
+        },
+        {
+            "q": "What is the frequency range(in Hz) of Electroencephalogram(EEG)?",
+            "option": [
+                "10-40",
+                "1000-2000",
+                "0-100"
+            ],
+            "answer": "Option 3",
+            "description": " Electroencephalogram(EEG) signal has a frequency range of 0-100 Hz."
+        },
+        {
+            "q": "Which of the following electromagnetic signals has a frequency range of 30kHz-3MHz?",
+            "option": [
+                "Radio broadcast",
+                "Shortwave radio signal",
+                "RADAR"
+            ],
+            "answer": "Option 3",
+            "description": "Radio broadcast signal is an electromagnetic signal which has a frequency range of 30kHz-3MHz."
+        },
+        {
+            "q": "When does the output of a NOR gate = 0?",
+            "option": [
+                "Whenever a 0 is present at an input",
+                "Only when all inputs = 0",
+                "Whenever a 1 is present at an input"
+            ],
+            "answer": "Option 3",
+            "description": "Based on logic gate concept"
+        },
+        
+        {
+            "q": "BCD input 1000 is fed to a 7 segment display through a BCD to 7 segment decoder/driver. The segments which will lit up are",
+            "option": [
+                "a, b, d",
+                "a, b, c",
+                "all"
+            ],
+            "answer": "Option 3",
+            "description": "1000 is binary equivalent of 8 so all segments are required to be lit up"
+        },
+        {
+            "q": "The number of digits in octal system is",
+            "option": [
+                "8",
+                "7",
+                "9"
+            ],
+            "answer": "Option 1",
+            "description": "Based on concept"
+        },
+        {
+            "q": "The number of switching functions of 3 variables are",
+            "option": [
+                "3",
+                "8",
+                "16"
+            ],
+            "answer": "Option 2",
+            "description": "2^3 is 8"
+        },
+        {
+            "q": "To reduce side lobes, in which region of the filter the frequency specifications has to be optimized?",
+            "option": [
+                "Stop Band",
+                "Pass Band",
+                "Transition Band"
+            ],
+            "answer": "Option 3",
+            "description": " To reduce the side lobes, it is desirable to optimize the frequency specification in the transition band of the filter."
+        }
+    ]
+}
